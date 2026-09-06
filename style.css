@@ -164,6 +164,12 @@ b{font-weight:700}
   .checks,.cases,.extras,.contact,.tiers{grid-template-columns:1fr}
   .founder{grid-template-columns:1fr;gap:12px}
   .tiers{grid-template-columns:1fr 1fr}
+  .menu{display:none;position:absolute;left:0;right:0;top:68px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 24px 16px}
+  .menu a{padding:12px 0;border-top:1px solid var(--line)}
+  .menu.open{display:flex}
+  .btn-nav{margin-left:auto}
+  .burger{margin-left:0}
+  .burger{display:block}
 }
 @media (max-width:640px){
   body{font-size:16px}
@@ -171,11 +177,8 @@ b{font-weight:700}
   .hero{padding:56px 0 44px}
   .tiers{grid-template-columns:1fr}
   .steps li{grid-template-columns:1fr;gap:6px}
-  .menu{display:none;position:absolute;left:0;right:0;top:68px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 24px 16px}
-  .menu a{padding:12px 0;border-top:1px solid var(--line)}
-  .menu.open{display:flex}
   .btn-nav{display:none}
-  .burger{display:block}
+  .burger{margin-left:auto}
   .fab{display:inline-flex}
   .contact-rows div{grid-template-columns:78px 1fr}
   .contact-form{padding:22px 18px}
