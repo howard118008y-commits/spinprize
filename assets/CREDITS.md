@@ -10,3 +10,4 @@
 | salon-counter.jpg | https://unsplash.com/photos/1528605248644-14dd04022da1 |
 | street-cafe.jpg | https://unsplash.com/photos/1507914372368-b2b085b925a1 |
 | cafe-dark.jpg | https://unsplash.com/photos/1554118811-1e0d58224f24 |
+| hero-desk.jpg | https://unsplash.com/photos/1499951360447-b19be8fe80f5 |

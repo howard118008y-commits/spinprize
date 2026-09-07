@@ -1,15 +1,9 @@
 (function () {
-  // nav: transparent on top, black after scroll, hide on scroll down / show on scroll up
+  // nav: transparent over hero, sticky white after scrolling past 120px
   var nav = document.getElementById('nav');
   var burger = document.getElementById('burger');
   var menu = document.getElementById('menu');
-  var lastY = 0;
-  function onScroll() {
-    var y = window.scrollY || 0;
-    nav.classList.toggle('floating', y > 40);
-    nav.classList.toggle('hide', y > lastY && y > 120 && !menu.classList.contains('open'));
-    lastY = y;
-  }
+  function onScroll() { nav.classList.toggle('sticky', (window.scrollY || 0) > 120); }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
@@ -21,21 +15,6 @@
   menu.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') { menu.classList.remove('open'); nav.classList.remove('menu-open'); }
   });
-
-  // hero slider
-  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
-  var cur = 0, timer;
-  var curEl = document.getElementById('cur');
-  function go(n) {
-    slides[cur].classList.remove('is-on');
-    cur = (n + slides.length) % slides.length;
-    slides[cur].classList.add('is-on');
-    curEl.textContent = cur + 1;
-  }
-  function auto() { clearInterval(timer); timer = setInterval(function () { go(cur + 1); }, 6000); }
-  document.getElementById('prev').addEventListener('click', function () { go(cur - 1); auto(); });
-  document.getElementById('next').addEventListener('click', function () { go(cur + 1); auto(); });
-  auto();
 
   // contact form → mailto
   var MAIL_TO = 'spinprize.digital@gmail.com';
