@@ -11,10 +11,10 @@
 <meta property="og:description" content="你的店在 Google 地圖上找得到，點進去卻沒有網站。我們幫你補上那一格。前十家創始價 15,000 含稅。">
 <meta property="og:image" content="https://howard118008y-commits.github.io/spinprize/assets/og.jpg">
 <meta property="og:locale" content="zh_TW">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316213a'/%3E%3Ctext x='32' y='44' font-size='36' font-family='serif' font-weight='900' fill='%23fff' text-anchor='middle'%3E旋%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23191919'/%3E%3Ctext x='32' y='44' font-size='36' font-family='sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'%3E旋%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
@@ -26,13 +26,7 @@
   "telephone": "+886-2-2226-2678",
   "email": "spinprize.digital@gmail.com",
   "taxID": "62149294",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "景平路593號之1",
-    "addressLocality": "中和區",
-    "addressRegion": "新北市",
-    "addressCountry": "TW"
-  },
+  "address": {"@type": "PostalAddress", "streetAddress": "景平路593號之1", "addressLocality": "中和區", "addressRegion": "新北市", "addressCountry": "TW"},
   "areaServed": ["中和區", "永和區", "板橋區", "新北市", "台北市"],
   "priceRange": "NT$15,000–280,000",
   "makesOffer": [
@@ -46,149 +40,158 @@
 </head>
 <body>
 
-<header class="nav" id="top">
-  <div class="wrap nav-in">
-    <a class="brand" href="#top"><span class="brand-mark">旋</span><span class="brand-name">旋賞數位有限公司</span></a>
+<header class="nav" id="nav">
+  <div class="cnt-fc nav-in">
+    <a class="brand" href="#top" aria-label="旋賞數位有限公司">旋賞數位</a>
     <nav class="menu" id="menu">
-      <a href="#cases">做過的案子</a>
-      <a href="#pricing">服務與金額</a>
-      <a href="#process">七天流程</a>
+      <a href="#work">案例</a>
+      <a href="#expertise">服務</a>
+      <a href="#pricing">金額</a>
+      <a href="#process">流程</a>
       <a href="#faq">常見問題</a>
       <a href="#contact">聯絡</a>
       <a href="internal/">內部</a>
+      <a class="btn btn-sm" href="#contact">索取報價</a>
     </nav>
-    <a class="btn btn-nav" href="#contact">索取報價</a>
     <button class="burger" id="burger" aria-label="開啟選單" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<main>
+<main id="top">
 
-<!-- 首屏 -->
-<section class="hero">
-  <div class="wrap hero-in">
-    <p class="eyebrow">新北中和・網站建置・實體店面</p>
-    <h1>你的店在 Google 地圖上找得到，<br>點進去卻沒有網站。<br><em>我們幫你補上那一格。</em></h1>
-    <p class="lead">入門級五頁形象站 38,000，<strong>前十家創始價 15,000 元含稅</strong>，七個工作天交件。網域登記在你名下，哪天不做了檔案帶走。</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#contact">寄一份寫上店名的報價給我</a>
-      <a class="btn btn-ghost" href="#cases">先看做過的案子</a>
-    </div>
-    <ul class="stats">
-      <li><b>7</b><span>個工作天交件</span></li>
-      <li><b>0</b><span>元訂金（入門與標準級）</span></li>
-      <li><b>2</b><span>個工作天內回覆建議</span></li>
-      <li><b>593<small>之1</small></b><span>景平路，走進來找得到人</span></li>
-    </ul>
+<!-- HERO 輪播 -->
+<section class="hero" id="hero">
+  <div class="slides" id="slides">
+    <figure class="slide is-on">
+      <img src="assets/case-shanyu.jpg" alt="山遇民宿官網" width="1440" height="900">
+      <figcaption class="caption">
+        <div><p class="label">案例／進階級</p><h2>山遇民宿：手刻立體剖面導覽</h2></div>
+        <div class="cap-r"><a class="btn" href="https://shanyu2015.com" target="_blank" rel="noopener">看網站</a></div>
+      </figcaption>
+    </figure>
+    <figure class="slide">
+      <img src="assets/case-cx468.jpg" alt="鋮馨租賃官網" width="1440" height="900">
+      <figcaption class="caption">
+        <div><p class="label">案例／系統級</p><h2>鋮馨租賃：走完就約到面談的接單站</h2></div>
+        <div class="cap-r"><a class="btn" href="https://cx468.com.tw" target="_blank" rel="noopener">看網站</a></div>
+      </figcaption>
+    </figure>
+    <figure class="slide">
+      <img src="assets/cafe-dark.jpg" alt="店面" width="2000" height="645">
+      <figcaption class="caption">
+        <div><p class="label">創始價／前十家</p><h2>入門級五頁形象站，15,000 元含稅</h2></div>
+        <div class="cap-r"><a class="btn" href="#pricing">看金額</a></div>
+      </figcaption>
+    </figure>
   </div>
+  <div class="hero-ctl cnt-fc">
+    <button class="arrow" id="prev" aria-label="上一張">‹</button>
+    <span class="counter"><span id="cur">1</span> / 3</span>
+    <button class="arrow" id="next" aria-label="下一張">›</button>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="statement">
+  <div class="cnt-mc">
+    <p class="lead">你的店在 Google 地圖上找得到，點進去卻沒有網站。我們幫你補上那一格：五頁形象站七個工作天交件，網域登記在你名下，哪天不做了檔案帶走。<a href="#work">先看做過的案子</a>，或<a href="#contact">留個聯絡方式</a>，兩個工作天內回你一份寫上店名的建議。</p>
+    <svg class="squiggle" viewBox="0 0 540 40" fill="none" aria-hidden="true"><path d="M2 30 C 60 30, 80 8, 120 12 S 170 34, 210 22 S 260 4, 300 14 S 350 34, 400 20 S 470 6, 538 18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="sec cnt-fc" id="expertise">
+  <h2 class="h-sec">我們做的三種網站</h2>
+  <div class="cols3">
+    <div><h3>形象站</h3><p>五頁起：首頁、服務或房型、價目、聯絡、地圖。手機版同步，含首年網域、主機、SSL、Google 商家綁定與 GA4。客人搜得到、看得到價目、找得到電話。</p></div>
+    <div><h3>形象站＋立體導覽</h3><p>手刻的空間立體剖面，客人點一間房就跳出照片和價目。不是掃描環景，是一行一行寫出來的，所以改房價、換照片我們自己就能改。適合民宿、健身房、展示中心。</p></div>
+    <div><h3>接單站</h3><p>多步驟線上諮詢流程走完直接約到時段、AI 助理接第一線問題、文件解析工具、自動發文與報表。你要的是接單入口，不是型錄，才走這一級。</p></div>
+  </div>
+  <p class="center"><a class="btn" href="#pricing">看服務與金額</a></p>
+</section>
+
+<!-- WORK WALL -->
+<section class="sec cnt-fc" id="work">
+  <h2 class="h-sec">案例、服務與常見問題</h2>
+  <div class="wall">
+    <a class="card card-l" href="https://shanyu2015.com" target="_blank" rel="noopener">
+      <div class="card-img"><img src="assets/case-shanyu.jpg" alt="山遇民宿官網" loading="lazy" width="1440" height="900"></div>
+      <p class="label">案例／進階級</p><h3>山遇民宿</h3>
+      <p class="card-sub">四房民宿。手刻立體剖面導覽，客人點房間就跳出照片和價目。全台灣做得出這個的一隻手數得完。</p>
+    </a>
+    <a class="card card-s card-solid" href="#pricing">
+      <div class="card-img card-fill"><div class="fill-in"><s>38,000</s><b>15,000</b><span>元含稅・七個工作天</span></div></div>
+      <p class="label">服務／創始價</p><h3>前十家，內容和正價一模一樣</h3>
+    </a>
+    <a class="card card-s" href="#pain">
+      <div class="card-img"><img src="assets/shop-clothing.jpg" alt="店面" loading="lazy" width="1600" height="960"></div>
+      <p class="label">你現在的狀況</p><h3>客人問「你們有網站嗎」的時候</h3>
+    </a>
+    <a class="card card-l" href="https://cx468.com.tw" target="_blank" rel="noopener">
+      <div class="card-img"><img src="assets/case-cx468.jpg" alt="鋮馨租賃官網" loading="lazy" width="1440" height="900"></div>
+      <p class="label">案例／系統級</p><h3>鋮馨租賃</h3>
+      <p class="card-sub">融資業。線上諮詢流程走完直接約到面談時段，首頁 AI 助理接第一線，另掛契據解析工具與每日自動更新的專欄。</p>
+    </a>
+    <a class="card card-l" href="#process">
+      <div class="card-img"><img src="assets/salon-counter.jpg" alt="店家櫃檯" loading="lazy" width="1600" height="960"></div>
+      <p class="label">流程</p><h3>這七天各做什麼</h3>
+      <p class="card-sub">第一天到你店裡坐一小時，你講話就好。第六天改兩輪，第七天上線把帳號密碼交給你。</p>
+    </a>
+    <a class="card card-s card-solid card-dark" href="#faq">
+      <div class="card-img card-fill"><div class="fill-in fill-q">?</div></div>
+      <p class="label">常見問題</p><h3>網域到底算誰的？哪天不做了東西怎麼拿？</h3>
+    </a>
+  </div>
+  <p class="center"><a class="btn" href="#contact">寄一份寫上店名的報價給我</a></p>
+</section>
+
+<!-- STATS -->
+<section class="stats cnt-fc">
+  <ul>
+    <li><b>7</b><span>個工作天交件</span></li>
+    <li><b>0</b><span>元訂金，入門與標準級</span></li>
+    <li><b>2</b><span>個工作天內回覆建議</span></li>
+    <li><b>593<small>之1</small></b><span>景平路，走進來找得到人</span></li>
+  </ul>
 </section>
 
 <!-- 狀況 -->
-<section class="sec" id="pain">
-  <div class="wrap">
-    <p class="sec-num">一</p>
-    <h2>你現在可能遇到的狀況</h2>
-    <ul class="checks">
-      <li>客人搜尋你的店名，跳出來的是別人寫的部落格文章，不是你自己的說明。</li>
-      <li>介紹、價目、房型全放在 Facebook 貼文裡，發過三個月就翻不到了。</li>
-      <li>電話進來的第一句是「你們有網站嗎？我想先看一下再決定。」</li>
-      <li>想投 Google 廣告，發現沒有一個地方可以把人帶過去。</li>
-      <li>客人在 LINE 問價目，你每次都要重打一次，或翻相簿找那張圖。</li>
-      <li>同業已經有網站，客人比過之後選了他，你不知道自己輸在哪一段。</li>
-      <li>有人想介紹客人給你，卻只能轉一個電話號碼過去，沒有東西可以轉發。</li>
-      <li>Google 商家上排最前面的照片是客人拍的，不是你想給人看的那幾張。</li>
-    </ul>
-    <p class="note">勾到兩個以上，這頁剩下的部分你看得完。</p>
-  </div>
+<section class="sec cnt-fc" id="pain">
+  <h2 class="h-sec">你現在可能遇到的狀況</h2>
+  <ol class="rows">
+    <li>客人搜尋你的店名，跳出來的是別人寫的部落格文章，不是你自己的說明。</li>
+    <li>介紹、價目、房型全放在 Facebook 貼文裡，發過三個月就翻不到了。</li>
+    <li>電話進來的第一句是「你們有網站嗎？我想先看一下再決定。」</li>
+    <li>想投 Google 廣告，發現沒有一個地方可以把人帶過去。</li>
+    <li>客人在 LINE 問價目，你每次都要重打一次，或翻相簿找那張圖。</li>
+    <li>同業已經有網站，客人比過之後選了他，你不知道自己輸在哪一段。</li>
+    <li>有人想介紹客人給你，卻只能轉一個電話號碼過去，沒有東西可以轉發。</li>
+    <li>Google 商家上排最前面的照片是客人拍的，不是你想給人看的那幾張。</li>
+  </ol>
+  <p class="muted">勾到兩個以上，這頁剩下的部分你看得完。</p>
 </section>
 
-<!-- 案例 -->
-<section class="sec sec-dark" id="cases">
-  <div class="wrap">
-    <p class="sec-num">二</p>
-    <h2>已經交出去的案子</h2>
-    <p class="sub">先給你看做過的，再看金額。</p>
-    <div class="cases">
-      <article class="case">
-        <a class="case-shot" href="https://shanyu2015.com" target="_blank" rel="noopener"><img src="assets/case-shanyu.jpg" alt="山遇民宿官網首頁" loading="lazy" width="1440" height="900"></a>
-        <div class="case-body">
-          <div class="case-head"><h3>山遇民宿</h3><span class="tag">進階級</span></div>
-          <p class="case-url"><a href="https://shanyu2015.com" target="_blank" rel="noopener">shanyu2015.com</a></p>
-          <p>四房民宿。除了一般的介紹頁，另外做了一個<b>手刻的立體剖面導覽</b>：客人直接點四間房的其中一間，跳出照片和價目。不是掃描出來的環景，是一行一行寫出來的，所以要改房價、換照片、加房型，我們自己就能改。</p>
-        </div>
-      </article>
-      <article class="case">
-        <a class="case-shot" href="https://cx468.com.tw" target="_blank" rel="noopener"><img src="assets/case-cx468.jpg" alt="鋮馨租賃官網首頁" loading="lazy" width="1440" height="900"></a>
-        <div class="case-body">
-          <div class="case-head"><h3>鋮馨租賃</h3><span class="tag">系統級</span></div>
-          <p class="case-url"><a href="https://cx468.com.tw" target="_blank" rel="noopener">cx468.com.tw</a></p>
-          <p>融資業。這個案子已經不只是網站：線上諮詢流程走完會直接<b>約到面談時段</b>，首頁有 AI 助理接第一線問題，另外掛了一支自動解析契據的工具，還有每天自動更新的專欄。你要的是接單入口而不是型錄，這是我們做得到的程度。</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 級距 -->
-<section class="sec" id="pricing">
-  <div class="wrap">
-    <p class="sec-num">三</p>
-    <h2>服務級距與金額</h2>
-    <p class="sub">全部含稅，開立公司統一發票，<b>不會在交件時追加</b>。</p>
+<!-- PRICING (light) -->
+<section class="light" id="pricing">
+  <div class="cnt-fc sec">
+    <h2 class="h-sec">服務級距與金額</h2>
+    <p class="lead-s">全部含稅，開立公司統一發票，不會在交件時追加。</p>
 
     <div class="founder">
-      <div>
-        <p class="founder-k">創始價・前十家</p>
-        <p class="founder-v"><s>38,000</s> <b>NT$15,000</b></p>
-      </div>
-      <p>我們的網站建置服務今年才開，需要前十個案例來累積口碑。這十家拿到的東西<b>和 38,000 元完全一樣</b>，差別只在你願不願意讓我們把成品放進作品集。第十一家起恢復 38,000。已成交的客戶不受影響，年費也照創始價鎖住。</p>
+      <div class="founder-l"><p class="label">創始價／前十家</p><p class="founder-v"><s>38,000</s><b>NT$15,000</b></p></div>
+      <p>我們的網站建置服務今年才開，需要前十個案例來累積口碑。這十家拿到的東西和 38,000 元完全一樣，差別只在你願不願意讓我們把成品放進作品集。第十一家起恢復 38,000。已成交的客戶不受影響，年費也照創始價鎖住。</p>
     </div>
 
     <div class="tiers">
-      <div class="tier">
-        <p class="tier-k">入門</p>
-        <h3>五頁形象站</h3>
-        <p class="price">38,000</p>
-        <p>首頁、服務或房型、價目、聯絡、地圖。手機版同步製作，含首年網域、主機、SSL、Google 商家綁定與 GA4。</p>
-        <p class="tier-fit">解決「客人搜尋得到、看得到價目、找得到電話」。</p>
-      </div>
-      <div class="tier">
-        <p class="tier-k">標準</p>
-        <h3>品牌形象站</h3>
-        <p class="price">78,000</p>
-        <p>入門全部，再加：品牌視覺客製、文案代筆、完整 SEO 架構（Title、描述、Sitemap、結構化資料）、可自行編輯的後台。</p>
-        <p class="tier-fit">想長期靠搜尋接單的人。</p>
-      </div>
-      <div class="tier tier-hi">
-        <p class="tier-k">進階</p>
-        <h3>形象站＋立體導覽</h3>
-        <p class="price">168,000</p>
-        <p>標準全部，再加手刻的空間立體剖面。客人可以點房間，跳出照片和價目。包在這一級比事後單獨加購省 30,000。</p>
-        <p class="tier-fit">只有房型或空間本身就是賣點的生意才划算：民宿、健身房、展示中心。是餐廳的話我們會直接說不要買。</p>
-      </div>
-      <div class="tier">
-        <p class="tier-k">系統</p>
-        <h3>客製流程與工具</h3>
-        <p class="price">280,000<small>起</small></p>
-        <p>多步驟線上諮詢流程、AI 助理、文件解析工具、自動發文與報表串接。依需求開規格，先報價再動工。</p>
-        <p class="tier-fit">你要的是接單入口，不是型錄。</p>
-      </div>
+      <div class="tier"><p class="label">入門</p><h3>五頁形象站</h3><p class="price">38,000</p><p>首頁、服務或房型、價目、聯絡、地圖。手機版同步製作，含首年網域、主機、SSL、Google 商家綁定與 GA4。</p><p class="fit">解決「客人搜尋得到、看得到價目、找得到電話」。</p></div>
+      <div class="tier"><p class="label">標準</p><h3>品牌形象站</h3><p class="price">78,000</p><p>入門全部，再加：品牌視覺客製、文案代筆、完整 SEO 架構（Title、描述、Sitemap、結構化資料）、可自行編輯的後台。</p><p class="fit">想長期靠搜尋接單的人。</p></div>
+      <div class="tier tier-hi"><p class="label">進階</p><h3>形象站＋立體導覽</h3><p class="price">168,000</p><p>標準全部，再加手刻的空間立體剖面。客人可以點房間，跳出照片和價目。包在這一級比事後單獨加購省 30,000。</p><p class="fit">只有房型或空間本身就是賣點的生意才划算。是餐廳的話我們會直接說不要買。</p></div>
+      <div class="tier"><p class="label">系統</p><h3>客製流程與工具</h3><p class="price">280,000<small>起</small></p><p>多步驟線上諮詢流程、AI 助理、文件解析工具、自動發文與報表串接。依需求開規格，先報價再動工。</p><p class="fit">你要的是接單入口，不是型錄。</p></div>
     </div>
 
-    <div class="extras">
-      <div class="extra">
-        <h4>第二年起 續約維運 <b>12,000／年</b></h4>
-        <p>網域與主機續約、備份、故障排除，含每年兩次內容修改。換照片、改電話、調價格這種小事不算次數。每年給你一份健檢報告。續滿三年送一次改版或一次現場拍攝。不續約也可以，網站檔案給你帶走。</p>
-      </div>
-      <div class="extra">
-        <h4>加購 需要才加</h4>
-        <ul>
-          <li>現場拍攝，半日，交付 30 張修圖完成的照片 <b>8,000</b></li>
-          <li>LINE 官方帳號開通、圖文選單、自動回覆 <b>8,000</b></li>
-          <li>搬遷協助：部署到你指定的平台、設 DNS、一小時教學 <b>6,000</b></li>
-          <li>既有網站單獨加購立體導覽 <b>120,000</b></li>
-        </ul>
-      </div>
+    <div class="cols2">
+      <div><h4>第二年起 續約維運 <b>12,000／年</b></h4><p>網域與主機續約、備份、故障排除，含每年兩次內容修改。換照片、改電話、調價格這種小事不算次數。每年給你一份健檢報告。續滿三年送一次改版或一次現場拍攝。不續約也可以，網站檔案給你帶走。</p></div>
+      <div><h4>加購 需要才加</h4><ul class="plain"><li>現場拍攝，半日，交付 30 張修圖完成的照片 <b>8,000</b></li><li>LINE 官方帳號開通、圖文選單、自動回覆 <b>8,000</b></li><li>搬遷協助：部署到你指定的平台、設 DNS、一小時教學 <b>6,000</b></li><li>既有網站單獨加購立體導覽 <b>120,000</b></li></ul></div>
     </div>
 
     <ul class="terms">
@@ -200,98 +203,102 @@
   </div>
 </section>
 
-<!-- 流程 -->
-<section class="sec sec-tint" id="process">
-  <div class="wrap">
-    <p class="sec-num">四</p>
-    <h2>入門與標準級：這七天各做什麼</h2>
-    <ol class="steps">
-      <li><span class="day">第 1 天</span><div><b>我們到你店裡坐一個小時</b>，把你平常跟客人講的話問出來：價目怎麼算、客人最常問哪三句、哪幾張照片你自己最滿意。這一天你不用準備任何東西，講話就好。</div></li>
-      <li><span class="day">第 2–3 天</span><div>我們寫文案、挑照片、排版。中間只會找你一次：把缺的素材列一張清單給你，通常是三到五張照片。</div></li>
-      <li><span class="day">第 4–5 天</span><div>建置、手機版調整、上線前測試。同時申請網域、開主機、裝 SSL、綁 Google 商家與 GA4。這兩天你不會收到我們的訊息，正常。</div></li>
-      <li><span class="day">第 6 天</span><div>給你看，改兩輪。<b>你用文字講清楚要改什麼就好</b>，不用會任何軟體。這一輪不另外算錢。</div></li>
-      <li><span class="day">第 7 天</span><div>綁網域、正式上線，把 Google 商家與 GA4 的權限轉到你自己的帳號，附一頁操作說明。網域和主機的帳號密碼同一天交給你。</div></li>
-    </ol>
-    <p class="note">進階級約三週，多出來的時間是建模與互動測試。系統級依專案排程，簽約當天給你一份寫上日期的工作表。七天做不完的東西我們就不會說七天。</p>
+<!-- PROCESS -->
+<section class="sec cnt-fc" id="process">
+  <h2 class="h-sec">入門與標準級：這七天各做什麼</h2>
+  <div class="acc">
+    <details open><summary>第 1 天　我們到你店裡坐一個小時</summary><p>把你平常跟客人講的話問出來：價目怎麼算、客人最常問哪三句、哪幾張照片你自己最滿意。這一天你不用準備任何東西，講話就好。這是最重要的一天。</p></details>
+    <details><summary>第 2–3 天　寫文案、挑照片、排版</summary><p>你不用管我們。中間只會找你一次：把缺的素材列一張清單給你，通常是三到五張照片。</p></details>
+    <details><summary>第 4–5 天　建置、手機版、上線前測試</summary><p>連結、表單、地圖、載入速度。同時把網域申請下來、主機開好、SSL 裝好、Google 商家與 GA4 綁起來。這兩天你不會收到我們的訊息，正常。</p></details>
+    <details><summary>第 6 天　給你看，改兩輪</summary><p>你用文字講清楚要改什麼就好，不用會任何軟體、不用講尺寸。這一輪不另外算錢。</p></details>
+    <details><summary>第 7 天　綁網域、正式上線</summary><p>把 Google 商家與 GA4 的權限轉到你自己的帳號，附一頁操作說明。網域和主機的帳號密碼同一天交給你。</p></details>
   </div>
+  <p class="muted">進階級約三週，多出來的時間是建模與互動測試。系統級依專案排程，簽約當天給你一份寫上日期的工作表。七天做不完的東西我們就不會說七天。</p>
 </section>
 
 <!-- FAQ -->
-<section class="sec" id="faq">
-  <div class="wrap wrap-narrow">
-    <p class="sec-num">五</p>
-    <h2>老闆通常會問的幾件事</h2>
-    <div class="faq">
-      <details open><summary>創始價 15,000 是不是縮水版？</summary><p>不是。交付內容和 38,000 元一模一樣：五頁、手機版、網域、主機、SSL、Google 商家、GA4 全含。我們要的是你讓我們把成品放進作品集。第十一家起就沒有了，這件事寫在報價單上，不是話術。</p></details>
-      <details><summary>我要準備什麼？</summary><p>不用準備。第一天我們到店裡坐一個小時，你講話就好。第二、三天我們會列一張缺的素材清單給你，通常是三到五張照片。沒有照片可以加購現場拍攝。</p></details>
-      <details><summary>網域到底算誰的？</summary><p>你的。登記你或你公司，帳號密碼交給你，這一點寫進合約。你隨時可以上網查 whois 驗證，不用聽我們說。市面上有些同業把網域壓在自己手上當籌碼，我們不做這種事。</p></details>
-      <details><summary>以後要改東西，是不是每改一次收一次？</summary><p>第一年不收。第二年起年費 12,000，含兩次比較大的改版。換一張照片、改個電話、調個價格，這種不算次數。市場行情的主機維護大約兩萬到四萬一年，我們收一萬二。</p></details>
-      <details><summary>我要改東西，是不是得先學會講專有名詞？</summary><p>不用。用文字把想要的效果講明白，附上圖片就改得成。例如「首頁第一張換成上個月新拍的大廳那張，字改成『可包棟，最多住 12 人』」，一句話加一張照片就夠了。真的講不出來，把你覺得好看的別人的網站拍給我們看，我們看得懂。</p></details>
-      <details><summary>我自己能不能改？我不太會電腦。</summary><p>可以。交件時附一頁操作說明，換照片和改文字都是後台點一點的事。真的卡住打電話給我們，不收費。</p></details>
-      <details><summary>哪天不做了，東西怎麼拿？</summary><p>網站原始檔案打包給你，網域過戶到你名下，這兩件都不收費。要我們幫你部署到新地方、設好 DNS、教你怎麼改，那是另外的工，6,000，寫在加購項目裡。我們不會把檔案扣著不給，也不會假裝很難搬。</p></details>
-      <details><summary>你們公司在哪裡？我怕找不到人。</summary><p>中和景平路593號之1，有實體店面，走進來就找得到人。這也是我們入門級敢不收訂金的原因。</p></details>
-    </div>
+<section class="sec cnt-fc" id="faq">
+  <h2 class="h-sec">老闆通常會問的幾件事</h2>
+  <div class="acc">
+    <details><summary>創始價 15,000 是不是縮水版？</summary><p>不是。交付內容和 38,000 元一模一樣：五頁、手機版、網域、主機、SSL、Google 商家、GA4 全含。我們要的是你讓我們把成品放進作品集。第十一家起就沒有了，這件事寫在報價單上，不是話術。</p></details>
+    <details><summary>我要準備什麼？</summary><p>不用準備。第一天我們到店裡坐一個小時，你講話就好。第二、三天我們會列一張缺的素材清單給你，通常是三到五張照片。沒有照片可以加購現場拍攝。</p></details>
+    <details><summary>網域到底算誰的？</summary><p>你的。登記你或你公司，帳號密碼交給你，這一點寫進合約。你隨時可以上網查 whois 驗證，不用聽我們說。市面上有些同業把網域壓在自己手上當籌碼，我們不做這種事。</p></details>
+    <details><summary>以後要改東西，是不是每改一次收一次？</summary><p>第一年不收。第二年起年費 12,000，含兩次比較大的改版。換一張照片、改個電話、調個價格，這種不算次數。市場行情的主機維護大約兩萬到四萬一年，我們收一萬二。</p></details>
+    <details><summary>我要改東西，是不是得先學會講專有名詞？</summary><p>不用。用文字把想要的效果講明白，附上圖片就改得成。例如「首頁第一張換成上個月新拍的大廳那張，字改成『可包棟，最多住 12 人』」，一句話加一張照片就夠了。真的講不出來，把你覺得好看的別人的網站拍給我們看，我們看得懂。</p></details>
+    <details><summary>我自己能不能改？我不太會電腦。</summary><p>可以。交件時附一頁操作說明，換照片和改文字都是後台點一點的事。真的卡住打電話給我們，不收費。</p></details>
+    <details><summary>哪天不做了，東西怎麼拿？</summary><p>網站原始檔案打包給你，網域過戶到你名下，這兩件都不收費。要我們幫你部署到新地方、設好 DNS、教你怎麼改，那是另外的工，6,000，寫在加購項目裡。我們不會把檔案扣著不給，也不會假裝很難搬。</p></details>
+    <details><summary>你們公司在哪裡？我怕找不到人。</summary><p>中和景平路593號之1，有實體店面，走進來就找得到人。這也是我們入門級敢不收訂金的原因。</p></details>
   </div>
 </section>
 
 <!-- 行業 -->
-<section class="sec sec-tint" id="industries">
-  <div class="wrap">
-    <p class="sec-num">六</p>
-    <h2>目前承接的行業</h2>
-    <ul class="chips">
-      <li>民宿與旅宿</li><li>診所與牙醫</li><li>餐飲</li><li>美容美髮</li><li>眼鏡行</li><li>機車行與汽車保養</li><li>麵包店與甜點</li><li>健身房</li><li>工廠與產品型錄</li><li>補習班</li><li>寵物旅館</li><li>事務所</li>
-    </ul>
-    <p class="note">不在上面的也可以問。我們會直接告訴你這個行業適不適合做網站，不適合就說不適合。</p>
+<section class="sec cnt-fc" id="industries">
+  <h2 class="h-sec">目前承接的行業</h2>
+  <ul class="tags">
+    <li>民宿與旅宿</li><li>診所與牙醫</li><li>餐飲</li><li>美容美髮</li><li>眼鏡行</li><li>機車行與汽車保養</li><li>麵包店與甜點</li><li>健身房</li><li>工廠與產品型錄</li><li>補習班</li><li>寵物旅館</li><li>事務所</li>
+  </ul>
+  <p class="muted">不在上面的也可以問。我們會直接告訴你這個行業適不適合做網站，不適合就說不適合。</p>
+</section>
+
+<!-- MAP CTA -->
+<section class="mapcta">
+  <img class="mapbg" src="assets/street-cafe.jpg" alt="" aria-hidden="true" width="2000" height="645">
+  <div class="cnt-mc mapin">
+    <p>新北中和，景平路593號之1。有實體店面，走進來找得到人，這是我們入門級敢不收訂金的原因。</p>
+    <div class="btns"><a class="btn" href="#contact">索取報價</a><a class="btn" href="tel:+886222262678">打電話 02-2226-2678</a></div>
   </div>
 </section>
 
-<!-- 聯絡 -->
-<section class="sec sec-dark" id="contact">
-  <div class="wrap contact">
-    <div class="contact-l">
-      <p class="sec-num">七</p>
-      <h2>要一份寫上你店名的報價單嗎？</h2>
-      <p class="sub">留個聯絡方式，我們看過你現在的 Google 商家頁面之後，兩個工作天內回你一份具體的建議，包含你該買哪一級、不該買哪一級。不推銷，看完不合適就算了。</p>
-      <dl class="contact-rows">
-        <div><dt>電話</dt><dd><a href="tel:+886222262678">02-2226-2678</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:spinprize.digital@gmail.com">spinprize.digital@gmail.com</a></dd></div>
-        <div><dt>LINE</dt><dd id="line-id">官方帳號開通中，先用電話或 Email</dd></div><!-- TODO-LINE：LINE 官方帳號 ID 開好後換成連結 -->
-        <div><dt>地址</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=新北市中和區景平路593號之1" target="_blank" rel="noopener">新北市中和區景平路593號之1</a></dd></div>
-        <div><dt>統一編號</dt><dd>62149294</dd></div>
-      </dl>
-    </div>
-    <form class="contact-form" id="form">
-      <label>店名<input name="shop" required autocomplete="organization"></label>
-      <label>稱呼<input name="name" required autocomplete="name"></label>
-      <label>電話或 LINE<input name="tel" required autocomplete="tel"></label>
-      <label>想了解的級距
-        <select name="tier">
-          <option>還不確定，想聽建議</option>
-          <option>創始價 入門級 15,000</option>
-          <option>標準級 78,000</option>
-          <option>進階級 168,000（含立體導覽）</option>
-          <option>系統級 280,000 起</option>
-        </select>
-      </label>
-      <label>想解決的問題（可不填）<textarea name="msg" rows="3"></textarea></label>
-      <button class="btn btn-primary" type="submit">送出，開啟郵件寄給我們</button>
-      <p class="tiny">按送出會開啟你的郵件軟體並自動帶好內容，確認後寄出即可。留下的資料只用來回覆這一次詢問，不會轉給第三方。</p>
-    </form>
+<!-- CONTACT -->
+<section class="sec cnt-fc contact" id="contact">
+  <div>
+    <h2 class="h-sec">要一份寫上你店名的報價單嗎？</h2>
+    <p>留個聯絡方式，我們看過你現在的 Google 商家頁面之後，兩個工作天內回你一份具體的建議，包含你該買哪一級、不該買哪一級。不推銷，看完不合適就算了。</p>
+    <dl class="rows-dl">
+      <div><dt>電話</dt><dd><a href="tel:+886222262678">02-2226-2678</a></dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:spinprize.digital@gmail.com">spinprize.digital@gmail.com</a></dd></div>
+      <div><dt>LINE</dt><dd id="line-id">官方帳號開通中，先用電話或 Email</dd></div><!-- TODO-LINE：LINE 官方帳號 ID 開好後換成連結 -->
+      <div><dt>地址</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=新北市中和區景平路593號之1" target="_blank" rel="noopener">新北市中和區景平路593號之1</a></dd></div>
+      <div><dt>統一編號</dt><dd>62149294</dd></div>
+    </dl>
   </div>
+  <form id="form">
+    <label>店名<input name="shop" required autocomplete="organization"></label>
+    <label>稱呼<input name="name" required autocomplete="name"></label>
+    <label>電話或 LINE<input name="tel" required autocomplete="tel"></label>
+    <label>想了解的級距
+      <select name="tier">
+        <option>還不確定，想聽建議</option>
+        <option>創始價 入門級 15,000</option>
+        <option>標準級 78,000</option>
+        <option>進階級 168,000（含立體導覽）</option>
+        <option>系統級 280,000 起</option>
+      </select>
+    </label>
+    <label>想解決的問題（可不填）<textarea name="msg" rows="3"></textarea></label>
+    <button class="btn" type="submit">送出</button>
+    <p class="tiny">按送出會開啟你的郵件軟體並自動帶好內容，確認後寄出即可。留下的資料只用來回覆這一次詢問，不會轉給第三方。</p>
+  </form>
 </section>
 
 </main>
 
 <footer class="foot">
-  <div class="wrap foot-in">
-    <p><b>旋賞數位有限公司</b>　統一編號 62149294</p>
-    <p>新北市中和區景平路593號之1　02-2226-2678</p>
-    <p class="tiny">© 2026 旋賞數位有限公司</p>
+  <div class="cnt-fc foot-in">
+    <div class="foot-l">
+      <p class="foot-links"><a href="#contact">聯絡我們</a><a href="#pricing">服務與金額</a><a href="#work">案例</a></p>
+      <p class="foot-sub"><a href="#faq">常見問題</a><a href="internal/">內部</a></p>
+    </div>
+    <div class="foot-r">
+      <p class="label">CONNECT WITH US</p>
+      <p class="foot-social"><a href="tel:+886222262678" aria-label="電話">☏</a><a href="mailto:spinprize.digital@gmail.com" aria-label="Email">✉</a><a href="https://www.google.com/maps/search/?api=1&query=新北市中和區景平路593號之1" target="_blank" rel="noopener" aria-label="地圖">⌖</a></p>
+      <p class="foot-mark">旋</p>
+    </div>
   </div>
+  <div class="cnt-fc foot-legal"><p>© 2026 旋賞數位有限公司　統一編號 62149294　新北市中和區景平路593號之1　02-2226-2678</p></div>
 </footer>
 
-<a class="fab" href="tel:+886222262678" aria-label="撥打電話">☎ 02-2226-2678</a>
+<a class="fab" href="tel:+886222262678" aria-label="撥打電話">☏ 02-2226-2678</a>
 
 <script src="main.js"></script>
 </body>
