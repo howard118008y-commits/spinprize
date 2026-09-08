@@ -138,6 +138,9 @@ b{font-weight:700;color:var(--fg-title)}
 .sys h3{font-size:17px;margin-bottom:10px}
 .sys p{font-size:14px;margin-bottom:14px}
 .sys ul{padding-left:18px}
+.locked{font-size:14px;font-weight:600;color:var(--fg-body);margin:6px 0 0}
+.locked a{color:var(--purple);border-bottom:1px dashed var(--purple);padding-bottom:2px}
+.locked a:hover{color:var(--btn-orange);border-color:var(--btn-orange)}
 
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:30px;margin-top:10px;position:relative}
