@@ -16,6 +16,19 @@
     if (e.target.tagName === 'A') { menu.classList.remove('open'); nav.classList.remove('menu-open'); }
   });
 
+  // A plan link only selects the requested tier; it never submits the form.
+  document.querySelectorAll('[data-tier]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      var select = document.getElementById('inquiry-tier');
+      if (!select) return;
+      var value = link.getAttribute('data-tier');
+      if (Array.from(select.options).some(function (option) { return option.value === value; })) {
+        select.value = value;
+        select.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    });
+  });
+
   // contact form → mailto
   var MAIL_TO = 'spinprize.digital@gmail.com';
   document.getElementById('form').addEventListener('submit', function (e) {
