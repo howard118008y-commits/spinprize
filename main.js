@@ -30,7 +30,7 @@
   });
 
   // contact form → mailto
-  var MAIL_TO = 'spinprize.digital@gmail.com';
+  var MAIL_TO = 'howard118008y@gmail.com';
   document.getElementById('form').addEventListener('submit', function (e) {
     e.preventDefault();
     var f = e.target;
