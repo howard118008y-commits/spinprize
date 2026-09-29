@@ -292,7 +292,7 @@ function show(id, push = true) {
   viewRevision++; $('asset-status').hidden = true;
   const tab = TABS.find(t => t.id === pageId);
   $('view').title = tab.label; $('view').srcdoc = pages[pageId];
-  for (const b of document.querySelectorAll('.app-tab')) {
+  for (const b of document.querySelectorAll('.app-tab[data-id]')) {
     const selected = String(b.dataset.id === (tab.section || pageId));
     b.setAttribute('aria-selected', selected); b.setAttribute('aria-pressed', selected);
   }
@@ -355,6 +355,11 @@ for (const t of TABS.filter(t => t.nav)) {
   b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+iconPaths[t.id]+'</svg><span>'+t.label+'</span>';
   b.onclick=()=>show(t.id); $('app-nav').appendChild(b);
 }
+// 收單後台是外部服務：另開分頁，以後台密碼登入。
+const checkoutAdmin = document.createElement('a');
+checkoutAdmin.className='app-tab'; checkoutAdmin.href='https://checkout-api-production-9f95.up.railway.app/admin'; checkoutAdmin.target='_blank'; checkoutAdmin.rel='noopener noreferrer'; checkoutAdmin.style.textDecoration='none';
+checkoutAdmin.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2Z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg><span>收單後台</span>';
+$('app-nav').appendChild(checkoutAdmin);
 function renderSearch() {
   const query = $('search-input').value.trim().toLocaleLowerCase();
   const results = searchIndex.filter(t => !query || t.searchText.includes(query));
