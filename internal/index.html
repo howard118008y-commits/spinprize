@@ -295,10 +295,10 @@ async function decryptBytes(rawKey, buffer) {
 async function decrypt(rawKey, data) { return td.decode(await decryptBytes(rawKey, b64(data))); }
 let pages = null, activeKey = null, viewRevision = 0;
 const aliases = { benchmark:'agency-benchmark', twshare:'tw-market-share', pricing:'pricing-war', script:'call-script', business:'documents', board:'office', sign:'contract' };
-// 導覽：辦公室與合約是外部服務（內嵌）；其餘把加密頁依用途歸類，同類放在上方分頁切換。
+// 導覽：辦公室是外部服務（內嵌）；合約與收單後台另開分頁（heycheng.com.tw 送 frame-ancestors 'self'，不能被內嵌）；其餘把加密頁依用途歸類，同類放在上方分頁切換。
 const NAV = [
   { id:'office', section:'即時', label:'辦公室', frame:'https://board-production-336c.up.railway.app/', title:'Hey Cheng 辦公室', note:'正式看板・即時狀態；第一次要輸入看板通行碼', keywords:'看板 員工 同步 巡檢 即時' },
-  { id:'contract', section:'即時', label:'合約', frame:'https://heycheng.com.tw/portal/', title:'線上合約', note:'通行碼登入 → 合約文件 → 建立合約；雙方手寫簽名後存 PDF', keywords:'簽約 簽名 電子簽 合約文件 建立合約' },
+  { id:'contract', section:'即時', label:'合約', href:'https://heycheng.com.tw/portal/' },
   { id:'quote', section:'資料', label:'報價', pages:[['pricing-current','現行報價'],['comparison','同業比較'],['pricing-war','定價策略']] },
   { id:'sales', section:'資料', label:'業務', pages:[['call-script','電話話術'],['agency-benchmark','國際研究'],['tw-market-share','台灣市場']] },
   { id:'deploy', section:'資料', label:'部署', pages:[['deployment','部署與交付']] },
